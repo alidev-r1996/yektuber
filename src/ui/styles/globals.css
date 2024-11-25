@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    &,
+    &.light {
+      --color-background: 255, 255, 255;
+      --color-BRUNSWICK-100: 240, 242, 240;
+      --color-BRUNSWICK-200: 195, 214, 206;
+      --color-BRUNSWICK-300: 147, 171, 160;
+      --color-BRUNSWICK-400: 82, 113, 99;
+      --color-BRUNSWICK-500: 82, 113, 99;
+      --color-BRUNSWICK-600: 40, 67, 54;
+      --color-BRUNSWICK-700: 30, 50, 41;
+      --color-BRUNSWICK-800: 22, 38, 30;
+      --color-BRUNSWICK-900: 21, 33, 28;
+      --color-RISD-100: 242, 245, 252;
+      --color-RISD-200: 242, 245, 252;
+      --color-RISD-300: 160, 187, 255;
+      --color-RISD-400: 65, 118, 255;
+      --color-RISD-500: 18, 84, 255;
+      --color-RISD-600: 14, 67, 204;
+      --color-RISD-700: 11, 50, 153;
+      --color-RISD-800: 5, 25, 77;
+      --color-RISD-900: 4, 17, 51;
+      --color-EERIE-100: 242, 240, 237;
+      --color-EERIE-200: 235, 226, 218;
+      --color-EERIE-300: 191, 180, 168;
+      --color-EERIE-400: 158, 151, 142;
+      --color-EERIE-500: 102, 99, 94;
+      --color-EERIE-600: 71, 69, 66;
+      --color-EERIE-700: 40, 39, 37;
+      --color-EERIE-800: 31, 30, 28;
+      --color-EERIE-900: 20, 20, 18;
+      --color-ISABELLINE-100: 239, 234, 232;
+      --color-ISABELLINE-200: 224, 211, 202;
+      --color-ISABELLINE-300: 204, 189, 177;
+      --color-ISABELLINE-400: 171, 147, 128;
+      --color-ISABELLINE-500: 148, 121, 98;
+      --color-ISABELLINE-600: 128, 103, 82;
+      --color-ISABELLINE-700: 99, 78, 62;
+      --color-ISABELLINE-800: 66, 51, 40;
+      --color-ISABELLINE-900: 43, 34, 28;
+      --color-LIME-100: 251, 255, 235;
+      --color-LIME-200: 245, 255, 204;
+      --color-LIME-300: 235, 255, 153;
+      --color-LIME-400: 204, 255, 0;
+      --color-LIME-500: 163, 204, 0;
+      --color-LIME-600: 82, 102, 0;
+      --color-LIME-700: 41, 51, 0;
+      --color-LIME-800: 20, 26, 0;
+      --color-CADET-100: 243, 244, 246;
+      --color-CADET-200: 219, 223, 229;
+      --color-CADET-300: 183, 192, 203;
+      --color-CADET-400: 134, 150, 168;
+      --color-CADET-500: 106, 117, 139;
+      --color-CADET-600: 62, 69, 82;
+      --color-CADET-700: 39, 43, 53;
+      --color-CADET-800: 16, 19, 24;
+    }
+    &.dark {
+      --color-background: 0, 0, 0;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-mask {
+    mask-image: url("/assets/images/slider-shape.png");
+    mask-repeat: no-repeat;
+    mask-composite: exclude;
+    mask-position: center;
+  }
+
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .bg-mask {
+    mask-size: contain
+  }
+}
